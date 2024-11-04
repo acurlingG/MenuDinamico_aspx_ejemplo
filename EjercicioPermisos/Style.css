@@ -1,0 +1,44 @@
+﻿/* Estilos para el menú horizontal */
+.horizontal-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* Color de fondo del menú */
+    overflow: hidden;
+    display: flex; /* Alineación horizontal */
+    justify-content: center; /* Centrar el menú horizontalmente */
+}
+
+    .horizontal-menu li {
+        margin: 0;
+        padding: 0;
+    }
+
+        .horizontal-menu li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+            /* Efecto de color al pasar el mouse */
+            .horizontal-menu li a:hover {
+                background-color: #575757; /* Color al pasar el mouse */
+            }
+
+            /* Opción activa */
+            .horizontal-menu li a.active {
+                background-color: #4CAF50; /* Color de la opción activa */
+                color: white;
+            }
+
+/* Ajustes para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+    .horizontal-menu {
+        flex-direction: column; /* Cambia a menú vertical en pantallas pequeñas */
+        align-items: stretch;
+    }
+}
